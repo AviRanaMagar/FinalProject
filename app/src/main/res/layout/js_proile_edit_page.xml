@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register_layout_scrollView"
+    >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_js_p_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Details"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_name"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_js_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbox_bckgrnd"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_nationality"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_js_nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/editbox_bckgrnd"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_dob"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_js_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="YYYY/MM/DD"
+                android:inputType="date"
+                android:background="@drawable/editbox_bckgrnd"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_mobile"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_js_mobile"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbox_bckgrnd"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="Gender"
+                android:layout_width="110dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:onClick="gender"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:id="@+id/rb_js_male"
+                    android:onClick="gender"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:id="@+id/rb_js_female"
+                    android:onClick="gender"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_address"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_js_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbox_bckgrnd"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_e_email"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_js_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbox_bckgrnd"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_functional_area"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_js_funct_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:background="@drawable/editbox_bckgrnd"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_js_carer_obj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Career Objective"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="Objective"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_js_obj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Your objective"
+                android:background="@drawable/editbox_bckgrnd"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="Experience"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_js_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Your Exeriences"
+                android:background="@drawable/editbox_bckgrnd"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_js_edu_trn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education and Trainings"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_js_edu_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education :"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="Latest Degree"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_js_degree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/editbox_bckgrnd"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="Name of Degree"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_js_degree_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/editbox_bckgrnd"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="Passed Year"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_js_passed_yr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="@drawable/editbox_bckgrnd"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="Percentage"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_js_percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="@drawable/editbox_bckgrnd"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="Place/Institution"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_js_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/editbox_bckgrnd"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_js_trn_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trainings :"
+            android:textColor="@color/colorPrimaryDark" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="Trainings"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_js_training"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:background="@drawable/editbox_bckgrnd"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/llpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_margin="20dp"
+            >
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jRegister"
+                android:text="Update"
+                android:textColor="@color/light_gray"
+                android:background="@drawable/btn_backgrnd"
+                android:onClick="jUpdate"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

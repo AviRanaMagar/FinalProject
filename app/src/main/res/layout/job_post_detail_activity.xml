@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register_layout_scrollView"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Job Title"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:id="@+id/textView2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Organization"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_p_org"
+            android:text="ABCD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Category"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_p_category"
+            android:text="Teaching/Education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Posted Date"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_p_posted_date"
+            android:text="August 9, 2016"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Job Type"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_p_job_type"
+            android:text="Full Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Job Level"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_p_job_level"
+            android:text="mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Salary"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_p_salary"
+            android:text="Negotiable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Experience"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_p_exp"
+            android:text="1 - Any years"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Education"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_p_edu"
+            android:text="Diploma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="No. of Vacancies"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_p_vacancy_no"
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Location"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_p_loc"
+            android:text="Kathmandu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Apply Before "
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_p_expire_date"
+            android:text="September 15, 2016"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_p_edutitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Educational Criteria"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_p_education"
+            android:text="- High school diploma or euivalent is required"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_p_job_spec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Specification"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_p_spec"
+            android:text="- Minimum of 1 year customer service experience prefered.\n- Strong communication skills are must. Must beflexible in work and days.\n- Beginner to intermediate experience in Microsoft office.\n- This is strictly a part-time position and will remain as such."
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_job_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Description"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_p_job_desc"
+            android:text="- You will serve as a Test Administrator.\n
+- You will conduct CBT, PBT and IBT exams.\n
+- You will administer specified written examination sessions ranging in size from 1 to 500 persons at a time.\n
+- Ensure individuals can access and execute aptitude testing on computers for internet testing.\n
+- Following common test administrative practices and guidelines, you will instruct applicants on testing procedures."
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/llapply"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        >
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pApply"
+            android:text="Apply"
+            android:textColor="@color/light_gray"
+            android:background="@drawable/btn_backgrnd"
+            android:onClick="Apply"
+            />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

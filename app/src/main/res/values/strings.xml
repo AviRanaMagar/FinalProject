@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Job Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_up">RHS SignUp Page</string>
+    <string name="title_activity_home_page">RHS Home Page</string>
+    <string name="title_activity_search_display_area">Search Display Area</string>
+    <string name="title_activity_add_information">Add Information</string>
+
+    <string-array name="type">
+        <item>ROOM</item>
+        <item>FLAT</item>
+        <item>HOUSE</item>
+    </string-array>
+    <string name="title_activity_details">Details</string>
+    <string name="title_activity_your_info_area">YourInfoArea</string>
+    <string name="title_activity_test2">Test2</string>
+    <string name="title_activity_your_info_details">YourInfoDetails</string>
+    <string name="title_activity_edit_info_area">EditInfoArea</string>
+    <string name="title_activity_image_upload">ImageUpload</string>
+
+
+    <string name="job_title">Job Title</string>
+    <string name="company_name">Company Name</string>
+    <string name="expiry_date">Apply Before: ....</string>
+    <string name="label_name">Name </string>
+    <string name="label_nationality">Nationality </string>
+    <string name="label_dob">Date of Birth </string>
+    <string name="label_home_phone">Home Phone</string>
+    <string name="label_mobile">Mobile</string>
+    <string name="label_marital_status">Marital Status</string>
+    <string name="label_religion">Religion</string>
+    <string name="label_email_address">Email Address</string>
+    <string name="label_career_objective">Career Objective</string>
+    <string name="label_functional_area">Prefered Functional Area</string>
+    <string name="label_special_qualification">Special Qualification</string>
+    <string name="label_username">Username</string>
+    <string name="label_password">Password</string>
+    <string name="btn_register">Register</string>
+    <string name="label_org_name">Organization Name</string>
+    <string name="label_org_type">Organization Type</string>
+    <string name="label_ownership">Ownership</string>
+    <string name="label_size_of_org">Size of Organization</string>
+    <string name="label_designation">Designation</string>
+    <string name="label_address">Address</string>
+    <string name="label_e_phone">Phone</string>
+    <string name="label_e_email">Email</string>
+    <string name="label_website">Website</string>
+    <string name="chk_login_as_employer">Login as Employer</string>
+    <string name="btn_login">Login</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="l_gender">Gender</string>
+
+    <string-array name="register_menu">
+        <item>Register as JobSeeker</item>
+        <item>Register as Employer</item>
+    </string-array>
+</resources>

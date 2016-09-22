@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="20dp"
+android:paddingStart="20dp"
+android:paddingRight="20dp"
+android:paddingEnd="20dp"
+android:background="#21abcd"
+android:layout_gravity="center_horizontal">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal"
+    android:weightSum="1"
+    android:id="@+id/linearLayout2"></LinearLayout>
+<LinearLayout
+    android:layout_centerVertical="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginEnd="10dp"
+    android:id="@+id/linearLayout3">
+
+    <EditText
+        android:inputType="text"
+        android:background="@drawable/login_edit_text_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_username"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/label_username"/>
+
+    <EditText
+        android:background="@drawable/login_edit_text_back"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_password"
+        android:hint="@string/label_password"/>
+
+    <CheckBox
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="@string/chk_login_as_employer"
+        android:textStyle="bold"/>
+
+    <Button
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_login"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:id="@+id/btn_login"
+        android:onClick="btn_login"
+        android:background="@drawable/btn_backgrnd"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="Register"
+        android:id="@+id/register"
+        android:textColor="@color/red"
+        android:layout_gravity="center_horizontal"
+        android:text="Not Registered Yet? Rgister Here!"/>
+</LinearLayout>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="111dp"
+        android:src="@drawable/proj_logo"
+        android:layout_weight="0.22"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

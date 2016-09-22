@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register_layout_scrollView"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Post Details"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Job Title"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_jobtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Organization"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_org"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Category"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Posted Date"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_postdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Job Type"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_jobtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Job Level"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_joblevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Salary"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Experience"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Education"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_edu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="No. of Vacancies"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_vacancy_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Location"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Expire Date"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_expiredate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Educational Criteria"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_edu_criteria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Job Specification"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_job_spec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="Job Description"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_p_job_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:background="@drawable/editbox_bckgrnd"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/llapply"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_post"
+            android:text="Post"
+            android:textColor="@color/light_gray"
+            android:background="@drawable/btn_backgrnd"
+            android:onClick="postJob"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

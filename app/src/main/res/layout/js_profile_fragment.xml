@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register_layout_scrollView"
+    >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/tv_js_p_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Details"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_name"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_js_name"
+                android:text="abcdef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_nationality"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_js_nationality"
+                android:text="nepalese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_dob"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_js_dob"
+                android:inputType="date"
+                android:text="2050/12/23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_mobile"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_js_mobile"
+                android:text="987654321"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="Gender"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_js_gender"
+                android:text="female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_address"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_js_address"
+                android:text="kathmandu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_e_email"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_js_email"
+                android:text="gabcd@gmail.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="@string/label_functional_area"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_js_funct_ar"
+                android:text="IT and Technology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_js_carer_obj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Career Objective"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="Objective"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_js_obj"
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="Experience"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_js_exp"
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_js_edu_trn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education and Trainings"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_js_edu_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education :"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="Latest Degree"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_js_degree"
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="Name of Degree"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_dgree_name"
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="Passed Year"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_pass_yr"
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="Percentage"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_js_edu"
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="Place/Institution"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_js_institute"
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_js_trn_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trainings :"
+            android:textColor="@color/colorPrimaryDark" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="Trainings"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_js_trn"
+                android:text=""
+                android:hint="Write about your trainings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
